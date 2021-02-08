@@ -8,19 +8,20 @@
 
 #sudo cp turnserver.conf /usr/local/etc/turnserver.conf
 
-echo "enter mysql host (Default: localhost)"
-read host
+### Doesn't use MySQL ###
+#echo "enter mysql host (Default: localhost)"
+#read host
 
-echo "enter db name (Default: coturn)"
-read db
+#echo "enter db name (Default: coturn)"
+#read db
 
-echo "enter username (Default: user)"
-read user
+#echo "enter username (Default: user)"
+#read user
 
-echo "enter password: "
-read password
+#echo "enter password: "
+#read password
 
-sudo sed -i "s/host=/host=${host:=localhost}/" /usr/local/etc/turnserver.conf
-sudo sed -i "s/dbname=/dbname=${db:=coturn}/" /usr/local/etc/turnserver.conf
-sudo sed -i "s/user=/user=${user:=user}/" /usr/local/etc/turnserver.conf
-sudo sed -i "s/password=/password=${password}/" /usr/local/etc/turnserver.conf
+#sudo sed -i "s/host=/host=${host:=localhost}/" /usr/local/etc/turnserver.conf
+#sudo sed -i "s/dbname=/dbname=${db:=coturn}/" /usr/local/etc/turnserver.conf
+#sudo sed -i "s/user=/user=${user:=user}/" /usr/local/etc/turnserver.conf
+#sudo sed -i "s/password=/password=${password}/" /usr/local/etc/turnserver.conf

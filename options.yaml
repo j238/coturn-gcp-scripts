@@ -18,8 +18,8 @@ resources:
   type: templates/manager.jinja
   properties:
     #Cluster Config
-    prefix: vidmigos
-    zone: asia-south1-c
+    prefix: turn
+    zone: asia-northeast1-c
 
     #Config
     machine_type: n1-standard-1

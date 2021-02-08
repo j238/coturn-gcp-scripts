@@ -18,9 +18,9 @@ gcloud compute zones list
 echo "Enter desired zone: "
 read ZONE
 
-echo "enter prefix (Default: vidmigos)"
+echo "enter prefix (Default: turn)"
 read PREFIX
-sed -i "s/prefix:.*/prefix: '${PREFIX:= vidmigos}'/" options.yaml
+sed -i "s/prefix:.*/prefix: '${PREFIX:= turn}'/" options.yaml
 #PREFIX=$(awk '{for(i=1;i<=NF;i++) if ($i=="prefix:") print $(i+1)}' options.yaml)
 sed -i "s/zone:.*/zone: '$ZONE'/" options.yaml
 #ZONE=$(awk '{for(i=1;i<=NF;i++) if ($i=="zone:") $(i+1)=$ZONE}' options.yaml)
